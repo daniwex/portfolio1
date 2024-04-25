@@ -144,7 +144,15 @@ h1.lg-text{
     font-size: 10rem;
     filter: contrast(0%);
 }
-
+.links{
+    text-align: center;
+}
+.link{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 2rem;
+    color: black;
+}
 @media screen and (min-width: 1700px) {
     body{
         padding: 0 17em;
