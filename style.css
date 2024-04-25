@@ -179,6 +179,9 @@ h1.lg-text{
     .center-text{
         height: 75%;
     }
+    .w-70{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 1200px) {
     body{
