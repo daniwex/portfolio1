@@ -17,7 +17,7 @@ body{
     font-family: 'Space Grotesk';
     font-weight: 400;
     overflow-x: hidden;
-    padding: 0 15em;
+    padding: 0 10em;
 }
 nav{
     height: 70px;
@@ -31,6 +31,10 @@ ul{
 }
 h1{
     font-size: 4rem;
+}
+h2{
+    font-size: 3.5rem;
+    font-weight: lighter;
 }
 a{
     text-decoration: none;
@@ -46,6 +50,9 @@ ul.nav-link{
 }
 .w-70{
     width: 70%;
+}
+.text-center{
+    text-align: center;
 }
 .pt-3{
     padding-top: 1.3rem;
@@ -66,7 +73,96 @@ ul.nav-link a{
 .pt-40{
 padding-top: 40px;
 }
+.p-60-100{
+padding-top: 100px;
+padding-bottom: 100px;
+}
 #text{
     color: var(--red--color);
     font-size: 3rem;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding-top: 3rem;
+    gap: 10px;
+}
+.project-container a{
+    height: 400px;
+    width: 100%;
+    padding: 15px;
+    background-color: #1f2024;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.project-container a img{
+    border-radius: .5rem;
+    height: 65%;
+    object-fit: cover;
+}
+.project-title-container{
+    background-color: #25272a;
+    border-radius: .5rem;
+    margin-top: 3%;
+    height: 32%;
+    text-align: left;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.project-title-container--1{
+    display: flex;
+    justify-content: space-between;
+}
+span.arrow{
+    position: relative;
+    transition: rotate .25s ease;
+}
+.project-container a:hover span.arrow{
+    rotate: 1 0 1 -30deg;
+}
+
+footer{
+    height: 500px;
+    padding: 40px 0;
+}
+.center-text{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1.lg-text{
+    font-size: 10rem;
+    filter: contrast(0%);
+}
+
+@media screen and (min-width: 1700px) {
+    body{
+        padding: 0 17em;
+    }
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        padding-top: 3rem;
+        gap: 10px;
+    }
+    .p-60-100{
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    footer{
+        height: 600px;
+    }
+    .center-text{
+        height: 75%;
+    }
 }
