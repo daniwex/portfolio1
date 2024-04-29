@@ -233,4 +233,8 @@ h1.lg-text{
         font-size: 3rem;
         filter: contrast(0%);
     }
+    .p-60-100{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
 }
