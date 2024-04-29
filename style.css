@@ -110,10 +110,18 @@ padding-bottom: 100px;
     flex-direction: column;
     color: #fff;
 }
-.project-container a img{
+.project-container a span.number{
     border-radius: .5rem;
     height: 65%;
-    object-fit: cover;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    font-size: 2rem;
+    transition: .56s color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.project-container a:hover span.number{
+    scale: 1.5;
+    color: var(--red--color);
 }
 .project-title-container{
     background-color: #25272a;
