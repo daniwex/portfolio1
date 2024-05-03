@@ -145,7 +145,14 @@ span.arrow{
 .project-container a:hover span.arrow{
     rotate: 1 0 1 -30deg;
 }
-
+.status{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: rgba(0, 128, 0, 0.476);
+}
+.status.ncomplete{
+    color: rgb(92, 92, 5);
+}
 footer{
     height: 500px;
     padding: 40px 0;
